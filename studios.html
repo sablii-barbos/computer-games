@@ -4,78 +4,147 @@
   <meta charset="UTF-8">
   <meta name="author" content="Саблій Остап">
   <title>Ігрові студії</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    a {
+      color: #1d4ed8;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #f59e0b;
+      text-decoration: underline;
+    }
+
+    .studio-highlight {
+      color: #d97706 !important;
+      font-weight: bold;
+    }
+  </style>
 </head>
+<body>
 
-<body bgcolor="#f4f6f9" text="#333333" link="#166534" vlink="#14532d" alink="#0f766e">
+<a id="top"></a>
 
-<center>
-  <h1><font color="#1e3a5f">Відомі ігрові студії</font></h1>
-  <p><i>Переглядай сайти студій у фреймі або відкривай окремо.</i></p>
-</center>
+<h1>Відомі ігрові студії</h1>
+<p class="center"><i>Коротка інформація про розробників популярних ігор</i></p>
 
-<hr width="80%">
+<hr class="line">
 
-<center>
+<div class="nav">
   <a href="index.html">Головна</a> |
-  <a href="games.html">Популярні ігри</a> |
+  <a href="games.html#list">Популярні ігри</a> |
   <a href="genres.html#table">Жанри</a> |
   <a href="studios.html"><b>Студії</b></a>
-</center>
+</div>
 
-<hr width="80%">
+<hr class="line">
 
-<p>
-  Тут наведені студії-розробники. Якщо натиснути “У фреймі” — сайт відкриється нижче на сторінці.
-  Якщо сайт не показується — відкрий “Окремо”.
-</p>
+<div class="top-box">
+  <p class="studio-highlight">
+    На цій сторінці наведено кілька відомих студій, які створили популярні ігри.
+  </p>
+</div>
 
-<p>
-  Перехід на рядок цієї сторінки: <a href="#frame">до фрейму</a>.
-</p>
+<div class="container">
+  <p>
+    Тут зібрано коротку інформацію про студії-розробники. За допомогою посилань можна
+    відкрити офіційні сайти у фреймі або перейти на них в окремій вкладці.
+  </p>
 
-<table border="1" width="80%" align="center" cellpadding="10" cellspacing="0">
-  <tr bgcolor="#d1fae5">
-    <th align="left">У фреймі</th>
-    <th align="left">Окремо</th>
+  <p style="color:#1d4ed8;">
+    Нижче також є фрейм, у якому можна переглянути сторінку вибраної студії.
+  </p>
+</div>
+
+<table>
+  <tr>
+    <th>Студія</th>
+    <th>У фреймі</th>
+    <th>Окремо</th>
   </tr>
 
   <tr>
-    <td><a href="https://www.rockstargames.com" target="siteFrame">Rockstar Games</a></td>
-    <td><a href="https://www.rockstargames.com" target="_blank">Відкрити</a></td>
+    <td>Rockstar Games</td>
+    <td><a href="https://www.rockstargames.com" target="siteFrame">Відкрити</a></td>
+    <td><a href="https://www.rockstargames.com" target="_blank">Сайт</a></td>
   </tr>
 
   <tr>
-    <td><a href="https://www.valvesoftware.com" target="siteFrame">Valve</a></td>
-    <td><a href="https://www.valvesoftware.com" target="_blank">Відкрити</a></td>
+    <td>Valve</td>
+    <td><a href="https://www.valvesoftware.com" target="siteFrame">Відкрити</a></td>
+    <td><a href="https://www.valvesoftware.com" target="_blank">Сайт</a></td>
   </tr>
 
   <tr>
-    <td><a href="https://www.cdprojekt.com" target="siteFrame">CD Projekt Red</a></td>
-    <td><a href="https://www.cdprojekt.com" target="_blank">Відкрити</a></td>
+    <td>CD Projekt Red</td>
+    <td><a href="https://www.cdprojekt.com" target="siteFrame">Відкрити</a></td>
+    <td><a href="https://www.cdprojekt.com" target="_blank">Сайт</a></td>
   </tr>
 
   <tr>
-    <td><a href="https://www.ubisoft.com" target="siteFrame">Ubisoft</a></td>
-    <td><a href="https://www.ubisoft.com" target="_blank">Відкрити</a></td>
+    <td>Ubisoft</td>
+    <td><a href="https://www.ubisoft.com" target="siteFrame">Відкрити</a></td>
+    <td><a href="https://www.ubisoft.com" target="_blank">Сайт</a></td>
   </tr>
 
   <tr>
-    <td><a href="https://www.ea.com" target="siteFrame">Electronic Arts</a></td>
-    <td><a href="https://www.ea.com" target="_blank">Відкрити</a></td>
+    <td>Electronic Arts</td>
+    <td><a href="https://www.ea.com" target="siteFrame">Відкрити</a></td>
+    <td><a href="https://www.ea.com" target="_blank">Сайт</a></td>
   </tr>
 </table>
 
-<br>
+<h2>Коротка таблиця студій</h2>
+
+<table>
+  <tr>
+    <th>Студія</th>
+    <th>Відома гра</th>
+    <th>Основний напрямок</th>
+  </tr>
+  <tr>
+    <td>Rockstar Games</td>
+    <td>GTA V</td>
+    <td>Відкритий світ, сюжетні ігри</td>
+  </tr>
+  <tr>
+    <td>Valve</td>
+    <td>Counter-Strike 2</td>
+    <td>Шутери, онлайн-ігри</td>
+  </tr>
+  <tr>
+    <td>CD Projekt Red</td>
+    <td>Cyberpunk 2077</td>
+    <td>RPG, сюжетні ігри</td>
+  </tr>
+  <tr>
+    <td>Ubisoft</td>
+    <td>Assassin’s Creed</td>
+    <td>Екшен, пригоди</td>
+  </tr>
+  <tr>
+    <td>Electronic Arts</td>
+    <td>EA SPORTS FC</td>
+    <td>Симулятори, спорт</td>
+  </tr>
+</table>
 
 <a id="frame"></a>
-<h2 align="center"><font color="#1e3a5f">Фрейм</font></h2>
+<h2>Фрейм для перегляду</h2>
 
-<center>
-  <iframe name="siteFrame" src="https://www.rockstargames.com" width="80%" height="450" frameborder="1"></iframe>
-</center>
+<iframe
+  class="site-frame"
+  name="siteFrame"
+  src="https://www.rockstargames.com"
+  width="85%"
+  height="450"
+  frameborder="1">
+</iframe>
 
-<p align="center">
-  <a href="#frame">↑ Вгору</a> |
+<p class="footer">
+  <a href="#top">↑ Вгору</a> |
   <a href="index.html">На головну</a>
 </p>
 

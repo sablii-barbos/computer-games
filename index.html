@@ -1,140 +1,150 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="author" content="Саблій Остап">
-  <title>Світ комп’ютерних ігор</title>
+<meta charset="UTF-8">
+<meta name="author" content="Саблій Остап">
+<title>Світ комп’ютерних ігор</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+a{
+color:#e76f51;
+text-decoration:none;
+}
+
+a:hover{
+color:#f4a261;
+text-decoration:underline;
+}
+
+.highlight{
+color:#e76f51 !important;
+font-weight:bold;
+}
+
+.btn-main{
+background:#2b2d42;
+color:#ffffff !important;
+text-decoration:none;
+}
+
+.btn-second{
+background:#f4a261;
+color:#2b2d42 !important;
+text-decoration:none;
+}
+</style>
+
 </head>
 
-<body bgcolor="#f4f6f9" text="#333333" link="#166534" vlink="#14532d" alink="#0f766e">
+<body>
 
 <a id="top"></a>
 
-<center>
-  <h1><font color="#1e3a5f">Світ комп’ютерних ігор</font></h1>
-  <p><i>Ігри, жанри, студії та новини індустрії</i></p>
-</center>
+<h1>Світ комп’ютерних ігор</h1>
+<p class="center"><i>Ігри, жанри, студії та корисні ресурси</i></p>
 
-<hr width="80%">
+<hr class="line">
 
-<center>
-  <a href="index.html"><b>Головна</b></a> |
-  <a href="games.html#list">Популярні ігри</a> |
-  <a href="genres.html#table">Жанри</a> |
-  <a href="studios.html#frame">Студії</a>
-</center>
+<div class="nav">
+<a href="index.html"><b>Головна</b></a> |
+<a href="games.html#list">Популярні ігри</a> |
+<a href="genres.html#table">Жанри</a> |
+<a href="studios.html#frame">Студії</a>
+</div>
 
-<hr width="80%">
+<hr class="line">
 
-<h2>Про сайт</h2>
+<div class="hero">
+  <h2>Ласкаво просимо</h2>
 
-<p>
-  Цей сайт присвячений <b>сучасним комп’ютерним іграм</b>. Тут можна переглянути популярні проєкти,
-  їхні жанри, оцінку та перейти на офіційні сторінки.
-</p>
+  <p>
+    Це простий сайт про комп’ютерні ігри, де можна переглянути популярні ігри,
+    основні жанри, студії-розробники та кілька корисних посилань.
+  </p>
 
-<p>
-  Якщо ви тільки починаєте, радимо спершу глянути
-  <a href="genres.html#table">таблицю жанрів</a> — вона пояснює різницю між основними напрямками.
-</p>
+  <p class="highlight">
+    Сайт створено як навчальну роботу, тому він простий, але зручний і зрозумілий.
+  </p>
 
-<hr width="80%">
+  <div class="hero-buttons">
+    <a class="btn-main" href="games.html#list">Перейти до ігор</a>
+    <a class="btn-second" href="genres.html#table">Подивитися жанри</a>
+  </div>
+</div>
 
-<h2>Що зараз популярно</h2>
+<div class="card-wrap">
 
-<p>
-  У 2020-х роках найчастіше обирають такі жанри:
-</p>
+  <div class="card">
+    <h3>Популярні ігри</h3>
+    <p>
+      Сторінка з короткою інформацією про відомі ігри різних жанрів.
+    </p>
+    <a href="games.html#list">Відкрити</a>
+  </div>
 
-<ul type="square">
-  <li><b>Шутери</b> — швидкий темп і командні матчі</li>
-  <li><b>RPG</b> — сюжет, квести й прокачка персонажа</li>
-  <li><b>Екшен</b> — динаміка та відкритий світ</li>
-  <li><b>Симулятори</b> — реалістичні правила (спорт, транспорт тощо)</li>
-</ul>
+  <div class="card">
+    <h3>Жанри</h3>
+    <p>
+      Таблиця та короткий опис основних жанрів комп’ютерних ігор.
+    </p>
+    <a href="genres.html#table">Відкрити</a>
+  </div>
 
-<p>
-  Перейти до ігор: <a href="games.html#list">список популярних ігор</a>.
-</p>
+  <div class="card">
+    <h3>Студії</h3>
+    <p>
+      Розділ з відомими студіями, які створили популярні ігри.
+    </p>
+    <a href="studios.html#frame">Відкрити</a>
+  </div>
 
-<hr width="80%">
+</div>
 
-<h2>Коротка таблиця</h2>
+<div class="top-box">
+  <p>
+    <span class="highlight">Що є на сайті:</span>
+    короткі описи, таблиці, приклади ігор, жанри та сторінка зі студіями.
+  </p>
+</div>
 
-<p>
-  Натисни на жанр у першій колонці — перейдеш на відповідний рядок у <b>жанрах</b>.
-</p>
+<h2>Приклади популярних ігор</h2>
 
-<table border="1" width="80%" align="center" cellpadding="8" cellspacing="0">
-  <tr bgcolor="#d1fae5">
-    <th>Жанр</th>
-    <th>Приклад</th>
-    <th>Популярність</th>
-  </tr>
+<table>
+<tr>
+<th>Гра</th>
+<th>Жанр</th>
+<th>Оцінка</th>
+</tr>
 
-  <tr>
-    <td>
-      <a href="genres.html#genre-shooter"><b>Шутер</b></a>
-    </td>
-    <td>Counter-Strike 2</td>
-    <td align="center">★★★★★</td>
-  </tr>
+<tr>
+<td>Counter-Strike 2</td>
+<td>Шутер</td>
+<td class="center">9/10</td>
+</tr>
 
-  <tr>
-    <td>
-      <a href="genres.html#genre-rpg"><b>RPG</b></a>
-    </td>
-    <td>Cyberpunk 2077</td>
-    <td align="center">★★★★☆</td>
-  </tr>
+<tr>
+<td>GTA V</td>
+<td>Екшен</td>
+<td class="center">9/10</td>
+</tr>
 
-  <tr>
-    <td>
-      <a href="genres.html#genre-action"><b>Екшен</b></a>
-    </td>
-    <td>GTA V</td>
-    <td align="center">★★★★★</td>
-  </tr>
+<tr>
+<td>Cyberpunk 2077</td>
+<td>RPG</td>
+<td class="center">8/10</td>
+</tr>
 
-  <tr>
-    <td>
-      <a href="genres.html#genre-sim"><b>Симулятор</b></a>
-    </td>
-    <td>EA SPORTS FC 24</td>
-    <td align="center">★★★★☆</td>
-  </tr>
+<tr>
+<td>The Witcher 3</td>
+<td>RPG</td>
+<td class="center">10/10</td>
+</tr>
 </table>
 
-<hr width="80%">
-
-<h2 id="news">Новини (фрейм)</h2>
-
-<p align="center">
-  Нижче — новини у вигляді фрейму. Таке вбудовування <b>майже завжди працює</b>.
-  Додатково можна відкрити стрічку Steam новин:
-  <a href="https://store.steampowered.com/news/" target="_blank">Steam News</a>.
-</p>
-
-<center>
-  <iframe width="560" height="315"
-    src="https://www.youtube.com/embed?listType=user_uploads&list=IGN"
-    frameborder="0"
-    allowfullscreen>
-  </iframe>
-</center>
-
-<hr width="80%">
-
-<h2 id="links">Корисні ресурси</h2>
-
-<ol type="A">
-  <li><a href="https://store.steampowered.com" target="_blank">Steam</a> — магазин ігор та новини</li>
-  <li><a href="https://www.youtube.com/gaming" target="_blank">YouTube Gaming</a> — трейлери та огляди</li>
-  <li><a href="https://www.nvidia.com" target="_blank">NVIDIA</a> — драйвери та технології</li>
-</ol>
-
-<p align="center">
-  <a href="#top">↑ Вгору</a>
+<p class="footer">
+<a id="#top">↑ Вгору</a>
 </p>
 
 </body>

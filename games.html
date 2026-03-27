@@ -1,169 +1,255 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="author" content="Саблій Остап">
-  <title>Популярні ігри</title>
+
+<meta charset="UTF-8">
+<meta name="author" content="Саблій Остап">
+
+<title>Популярні ігри</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+a{
+    color:#1d4ed8;
+    text-decoration:none;
+}
+
+a:hover{
+    color:#f59e0b;
+    text-decoration:underline;
+}
+
+.game-highlight{
+    color:#d97706 !important;
+    font-weight:bold;
+}
+</style>
+
 </head>
 
-<body bgcolor="#f4f6f9" text="#333333" link="#166534" vlink="#14532d" alink="#0f766e">
+<body>
 
 <a id="top"></a>
 
-<center>
-  <h1><font color="#1e3a5f">Популярні комп’ютерні ігри</font></h1>
-  <p><i>Коротко: жанр, оцінка, опис та зображення.</i></p>
-</center>
+<h1>Популярні комп’ютерні ігри</h1>
 
-<hr width="80%">
-
-<center>
-  <a href="index.html">Головна</a> |
-  <a href="games.html"><b>Популярні ігри</b></a> |
-  <a href="genres.html#table">Жанри</a> |
-  <a href="studios.html#frame">Студії</a>
-</center>
-
-<hr width="80%">
-
-<p align="center">
-  <a href="#list">До списку</a> |
-  <a href="genres.html#table">До таблиці жанрів</a>
+<p class="center">
+<i>Коротко: жанр, оцінка та опис</i>
 </p>
 
-<a id="list"></a>
+<hr class="line">
 
-<table width="80%" align="center" cellpadding="10" cellspacing="0" bgcolor="#ffffff" border="1">
-  <tr bgcolor="#d1fae5">
-    <th colspan="2" align="left">Counter-Strike 2</th>
-  </tr>
-  <tr>
-    <td width="260" align="center" valign="top">
-      <a href="cs2.jpg" target="_blank">
-        <img src="cs2.jpg" width="240" height="140" alt="CS2">
-      </a>
-      <br>
-      <font size="2"><i>Клік по фото — повний розмір</i></font>
-    </td>
-    <td valign="top">
-      <p>
-        <b>Посилання:</b>
-        <a href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/" target="_blank">Steam</a>
-      </p>
+<div class="nav">
+<a href="index.html">Головна</a> |
+<a href="games.html"><b>Популярні ігри</b></a> |
+<a href="genres.html#table">Жанри</a> |
+<a href="studios.html#frame">Студії</a>
+</div>
 
-      <p>
-        <b>Жанр:</b> <a href="genres.html#genre-shooter">Шутер</a><br>
-        <b>Оцінка:</b> 9/10
-      </p>
+<hr class="line">
 
-      <p>
-        Командний онлайн-шутер, де важливі реакція, точність та взаємодія з командою.
-      </p>
-    </td>
-  </tr>
+<div class="top-box">
+<p class="game-highlight">
+На сторінці зібрані популярні ігри різних жанрів.
+</p>
+</div>
+
+
+<table>
+
+<tr>
+<th colspan="2">Counter-Strike 2</th>
+</tr>
+
+<tr>
+
+<td width="260" class="center">
+<img src="cs2.jpg" class="game-image">
+<br>
+<span class="small-note">Клік по фото — повний розмір</span>
+</td>
+
+<td>
+<b>Жанр:</b> Шутер <br>
+<b>Оцінка:</b> 9/10
+
+<p>
+Командний онлайн-шутер, де важлива реакція та взаємодія з командою.
+</p>
+</td>
+
+</tr>
+
 </table>
 
-<br>
 
-<table width="80%" align="center" cellpadding="10" cellspacing="0" bgcolor="#ffffff" border="1">
-  <tr bgcolor="#d1fae5">
-    <th colspan="2" align="left">Grand Theft Auto V</th>
-  </tr>
-  <tr>
-    <td width="260" align="center" valign="top">
-      <a href="gtaV.jpg" target="_blank">
-        <img src="gtaV.jpg" width="240" height="140" alt="GTA V">
-      </a>
-      <br>
-      <font size="2"><i>Клік по фото — повний розмір</i></font>
-    </td>
-    <td valign="top">
-      <p>
-        <b>Посилання:</b>
-        <a href="https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/" target="_blank">Steam</a>
-      </p>
 
-      <p>
-        <b>Жанр:</b> <a href="genres.html#genre-action">Екшен</a><br>
-        <b>Оцінка:</b> 9/10
-      </p>
+<table>
 
-      <p>
-        Відкритий світ, сюжетні місії та багато активностей — від перегонів до пограбувань.
-      </p>
-    </td>
-  </tr>
+<tr>
+<th colspan="2">GTA V</th>
+</tr>
+
+<tr>
+
+<td width="260" class="center">
+<img src="gtaV.jpg" class="game-image">
+</td>
+
+<td>
+<b>Жанр:</b> Екшен <br>
+<b>Оцінка:</b> 9/10
+
+<p>
+Відкритий світ, сюжетні місії та багато активностей.
+</p>
+</td>
+
+</tr>
+
 </table>
 
-<br>
 
-<table width="80%" align="center" cellpadding="10" cellspacing="0" bgcolor="#ffffff" border="1">
-  <tr bgcolor="#d1fae5">
-    <th colspan="2" align="left">Cyberpunk 2077</th>
-  </tr>
-  <tr>
-    <td width="260" align="center" valign="top">
-      <a href="cbr.jpg" target="_blank">
-        <img src="cbr.jpg" width="240" height="140" alt="Cyberpunk 2077">
-      </a>
-      <br>
-      <font size="2"><i>Клік по фото — повний розмір</i></font>
-    </td>
-    <td valign="top">
-      <p>
-        <b>Посилання:</b>
-        <a href="https://store.steampowered.com/app/1091500/Cyberpunk_2077/" target="_blank">Steam</a>
-      </p>
 
-      <p>
-        <b>Жанр:</b> <a href="genres.html#genre-rpg">RPG</a><br>
-        <b>Оцінка:</b> 8/10
-      </p>
+<table>
 
-      <p>
-        Сюжетна рольова гра у футуристичному світі: квести, прокачка та вибір стилю проходження.
-      </p>
-    </td>
-  </tr>
+<tr>
+<th colspan="2">Cyberpunk 2077</th>
+</tr>
+
+<tr>
+
+<td width="260" class="center">
+<img src="cbr.jpg" class="game-image">
+</td>
+
+<td>
+<b>Жанр:</b> RPG <br>
+<b>Оцінка:</b> 8/10
+
+<p>
+Сюжетна рольова гра у футуристичному місті Night City.
+</p>
+</td>
+
+</tr>
+
 </table>
 
-<br>
 
-<table width="80%" align="center" cellpadding="10" cellspacing="0" bgcolor="#ffffff" border="1">
-  <tr bgcolor="#d1fae5">
-    <th colspan="2" align="left">EA SPORTS FC 26</th>
-  </tr>
-  <tr>
-    <td width="260" align="center" valign="top">
-      <a href="fifa26.jpg" target="_blank">
-        <img src="fifa26.jpg" width="240" height="140" alt="FC 24">
-      </a>
-      <br>
-      <font size="2"><i>Клік по фото — повний розмір</i></font>
-    </td>
-    <td valign="top">
-      <p>
-        <b>Посилання:</b>
-        <a href="https://store.steampowered.com/app/2195250/EA_SPORTS_FC_24/" target="_blank">Steam</a>
-      </p>
 
-      <p>
-        <b>Жанр:</b> <a href="genres.html#genre-sim">Симулятор</a><br>
-        <b>Оцінка:</b> 7/10
-      </p>
+<table>
 
-      <p>
-        Футбольний симулятор: матчі, кар’єра, клуби й режими для гри з друзями.
-      </p>
-    </td>
-  </tr>
+<tr>
+<th colspan="2">Red Dead Redemption 2</th>
+</tr>
+
+<tr>
+
+<td width="260" class="center">
+<img src="rdr2.jpg" class="game-image">
+</td>
+
+<td>
+<b>Жанр:</b> Екшен / Пригоди <br>
+<b>Оцінка:</b> 10/10
+
+<p>
+Атмосферна історія про життя на Дикому Заході.
+</p>
+</td>
+
+</tr>
+
 </table>
 
-<br>
 
-<p align="center">
-  <a href="#top">↑ Вгору</a> |
-  <a href="index.html">На головну</a>
+
+<table>
+
+<tr>
+<th colspan="2">Minecraft</th>
+</tr>
+
+<tr>
+
+<td width="260" class="center">
+<img src="minecraft.jpg" class="game-image">
+</td>
+
+<td>
+<b>Жанр:</b> Пісочниця <br>
+<b>Оцінка:</b> 9/10
+
+<p>
+Гра де можна будувати, виживати та досліджувати світ.
+</p>
+</td>
+
+</tr>
+
+</table>
+
+
+
+<table>
+
+<tr>
+<th colspan="2">The Witcher 3</th>
+</tr>
+
+<tr>
+
+<td width="260" class="center">
+<img src="witcher3.jpg" class="game-image">
+</td>
+
+<td>
+<b>Жанр:</b> RPG <br>
+<b>Оцінка:</b> 10/10
+
+<p>
+Велика сюжетна рольова гра про відьмака Геральта.
+</p>
+</td>
+
+</tr>
+
+</table>
+
+
+
+<table>
+
+<tr>
+<th colspan="2">Forza Horizon 5</th>
+</tr>
+
+<tr>
+
+<td width="260" class="center">
+<img src="forza5.jpg" class="game-image">
+</td>
+
+<td>
+<b>Жанр:</b> Гонки <br>
+<b>Оцінка:</b> 9/10
+
+<p>
+Красива гоночна гра з відкритим світом та великою кількістю машин.
+</p>
+</td>
+
+</tr>
+
+</table>
+
+
+
+<p class="footer">
+<a href="#top">↑ Вгору</a> |
+<a href="index.html">На головну</a>
 </p>
 
 </body>
