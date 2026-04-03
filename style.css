@@ -12,7 +12,6 @@ color:#2b2d42;
 text-align:center;
 }
 
-
 h1{
 margin-top:28px;
 margin-bottom:10px;
@@ -202,10 +201,198 @@ text-align:center;
 margin:10px 0 20px 0;
 font-size:15px;
 }
+
 img{
 max-width:100%;
 height:auto;
 }
+
 #top{
 display:block;
+}
+
+.top{
+display:none;
+color:rgb(255, 5, 5);
+}
+
+/* Контекстні селектори */
+
+.nav a{
+font-weight:bold;
+padding:4px 8px;
+border-radius:4px;
+}
+
+table a{
+color:#1d4ed8;
+font-weight:bold;
+}
+
+.genre-list b{
+color:#d97706;
+}
+
+.card p{
+color:#444;
+}
+
+.top-box p{
+margin:0;
+}
+
+.container p{
+text-align:justify;
+}
+
+.footer a{
+font-weight:bold;
+}
+
+.hero-buttons a{
+text-decoration:none;
+}
+
+.hero-buttons a:hover{
+opacity:0.9;
+text-decoration:none;
+}
+
+.card a{
+color:#2b2d42;
+font-weight:bold;
+}
+
+.card a:hover{
+color:#d97706;
+}
+
+/* Дочірні селектори */
+
+.hero > h2{
+color:#e76f51;
+letter-spacing:0.5px;
+}
+
+.hero > p{
+max-width:90%;
+margin-left:auto;
+margin-right:auto;
+}
+
+.card > a{
+display:inline-block;
+margin-top:10px;
+padding:8px 14px;
+background:#f4a261;
+color:#2b2d42;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
+}
+
+.footer > a{
+font-weight:bold;
+}
+
+.genre-intro > p{
+margin:8px 0;
+}
+
+.top-box > p{
+font-size:16px;
+}
+
+.card > h3{
+margin-bottom:10px;
+}
+
+.nav > a{
+display:inline-block;
+}
+
+.container > p{
+padding-left:4px;
+padding-right:4px;
+}
+
+/* Сусідні селектори */
+
+h1 + p.center{
+font-size:18px;
+color:#666;
+margin-top:0;
+}
+
+h2 + table{
+margin-top:10px;
+border:2px solid #f4a261;
+}
+
+.nav + hr.line{
+margin-top:10px;
+}
+
+.card h3 + p{
+min-height:48px;
+}
+
+.game-image + br + .small-note{
+display:inline-block;
+margin-top:6px;
+font-style:italic;
+color:#888;
+}
+
+.genre-nav + hr.line{
+margin-top:12px;
+}
+
+.top-box + .container{
+margin-top:25px;
+}
+
+.hero + .card-wrap{
+margin-top:25px;
+}
+
+/* Hover ефекти */
+
+.nav a:hover,
+.footer a:hover,
+table a:hover{
+text-decoration:underline;
+}
+
+.card > a:hover{
+background:#e9a15a;
+}
+
+th:hover{
+background:#f8dfbf;
+}
+
+/* Додаткове оформлення */
+
+.genre-list li{
+padding:4px 0;
+}
+
+.genre-list li:hover{
+background:#f9f9fc;
+}
+
+table tr:hover td{
+background:#fcfcfe;
+}
+
+.site-frame:hover{
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.top-box:hover,
+.genre-intro:hover,
+.hero:hover,
+.card:hover{
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
 }
