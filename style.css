@@ -5,6 +5,7 @@ font-family:Arial, sans-serif;
 margin:0;
 padding:0;
 line-height:1.6;
+position:static;
 }
 
 h1,h2{
@@ -15,11 +16,29 @@ text-align:center;
 h1{
 margin-top:28px;
 margin-bottom:10px;
+position:relative;
+display:inline-block;
+left:50%;
+transform:translateX(-50%);
+padding-bottom:10px;
+padding-left:60px;
+}
+
+h1::before{
+content:"";
+position:absolute;
+left:0;
+top:50%;
+transform:translateY(-50%);
+width:48px;
+height:48px;
+background:url("lambda.png") no-repeat center/contain;
 }
 
 h2{
 margin-top:30px;
 margin-bottom:15px;
+position:relative;
 }
 
 p{
@@ -29,6 +48,7 @@ margin:12px 0;
 .container{
 width:85%;
 margin:0 auto;
+position:relative;
 }
 
 .line{
@@ -36,16 +56,24 @@ width:85%;
 margin:20px auto;
 border:0;
 border-top:1px solid #d6d6dc;
+position:static;
 }
 
 .nav{
 text-align:center;
 margin:15px 0;
 font-size:17px;
+position:sticky;
+top:0;
+z-index:100;
+background:#f7f7fb;
+padding:10px 0;
+box-shadow:0 2px 8px rgba(0,0,0,0.04);
 }
 
 .center{
 text-align:center;
+position:static;
 }
 
 table{
@@ -76,11 +104,14 @@ border:1px solid #cfcfd6;
 .small-note{
 font-size:13px;
 color:#666;
+position:relative;
+padding-left:20px;
 }
 
 .footer{
 text-align:center;
 margin:30px 0;
+position:relative;
 }
 
 .top-box{
@@ -88,9 +119,11 @@ width:85%;
 margin:20px auto;
 background:#ffffff;
 border-left:5px solid #f4a261;
-padding:12px 15px;
+padding:16px 18px 16px 46px;
 box-sizing:border-box;
 box-shadow:0 2px 8px rgba(0,0,0,0.04);
+position:relative;
+border-radius:8px;
 }
 
 .hero{
@@ -101,6 +134,8 @@ padding:25px;
 box-sizing:border-box;
 border:1px solid #dddfe6;
 box-shadow:0 2px 8px rgba(0,0,0,0.05);
+position:relative;
+border-radius:10px;
 }
 
 .hero p{
@@ -111,6 +146,7 @@ text-align:center;
 .hero-buttons{
 text-align:center;
 margin-top:18px;
+position:static;
 }
 
 .hero-buttons a{
@@ -119,23 +155,34 @@ padding:10px 18px;
 margin:6px;
 border-radius:6px;
 font-weight:bold;
+transition:0.2s;
 }
 
 .card-wrap{
 width:85%;
 margin:20px auto;
-display:flex;
-gap:18px;
-flex-wrap:wrap;
+display:block;
+overflow:hidden;
+position:static;
 }
 
 .card{
-flex:1 1 220px;
+width:30%;
+float:left;
+margin-right:3.333%;
 background:#ffffff;
 border:1px solid #dddfe6;
 padding:18px;
 box-sizing:border-box;
 box-shadow:0 2px 8px rgba(0,0,0,0.04);
+min-height:200px;
+position:relative;
+border-radius:10px;
+transition:0.2s;
+}
+
+.card:last-child{
+margin-right:0;
 }
 
 .card h3{
@@ -149,6 +196,7 @@ color:#2b2d42;
 width:85%;
 margin:0 auto;
 padding-left:35px;
+position:static;
 }
 
 .genre-list li,
@@ -160,6 +208,7 @@ margin-bottom:8px;
 .term-list{
 width:85%;
 margin:0 auto;
+position:static;
 }
 
 .term-list dt{
@@ -180,11 +229,14 @@ margin:20px auto;
 border:1px solid #cfcfd6;
 background:#ffffff;
 box-shadow:0 2px 8px rgba(0,0,0,0.04);
+border-radius:8px;
+position:static;
 }
 
 .studio-frame-title{
 text-align:center;
 color:#2b2d42;
+position:static;
 }
 
 .genre-intro{
@@ -194,12 +246,15 @@ background:#ffffff;
 padding:18px;
 border-left:5px solid #f4a261;
 box-shadow:0 2px 6px rgba(0,0,0,0.05);
+position:relative;
+border-radius:8px;
 }
 
 .genre-nav{
 text-align:center;
 margin:10px 0 20px 0;
 font-size:15px;
+position:static;
 }
 
 img{
@@ -209,11 +264,13 @@ height:auto;
 
 #top{
 display:block;
+position:static;
 }
 
 .top{
 display:none;
 color:rgb(255, 5, 5);
+position:static;
 }
 
 /* Контекстні селектори */
@@ -245,6 +302,10 @@ margin:0;
 text-align:justify;
 }
 
+.container > p{
+text-align:right;
+}
+
 .footer a{
 font-weight:bold;
 }
@@ -254,8 +315,9 @@ text-decoration:none;
 }
 
 .hero-buttons a:hover{
-opacity:0.9;
+opacity:0.95;
 text-decoration:none;
+transform:translateY(-2px);
 }
 
 .card a{
@@ -289,6 +351,7 @@ color:#2b2d42;
 text-decoration:none;
 border-radius:6px;
 font-weight:bold;
+transition:0.2s;
 }
 
 .footer > a{
@@ -356,6 +419,124 @@ margin-top:25px;
 margin-top:25px;
 }
 
+/* Псевдокласи посилань */
+
+a:link{
+color:inherit;
+}
+
+a:visited{
+color:#6b7280;
+}
+
+a:hover{
+text-decoration:underline;
+}
+
+a:active{
+color:#ef4444;
+}
+
+/* :first-child */
+
+.genre-list li:first-child{
+background:#fff4e8;
+padding:6px 10px;
+border-radius:6px;
+}
+
+table tr:first-child th{
+letter-spacing:0.5px;
+}
+
+.card-wrap .card:first-child{
+border:2px solid #f4a261;
+}
+
+/* Псевдоелементи */
+
+h1::after{
+content:"";
+display:block;
+width:70px;
+height:3px;
+margin:8px auto 0;
+background:#f4a261;
+border-radius:3px;
+}
+
+.top-box::before{
+content:"";
+position:absolute;
+left:14px;
+top:50%;
+transform:translateY(-50%);
+width:18px;
+height:18px;
+background:url("info.png") no-repeat center/contain;
+}
+
+.footer::before,
+.footer::after{
+content:"";
+display:inline-block;
+width:12px;
+height:12px;
+background:url("dott.png") no-repeat center/contain;
+vertical-align:middle;
+margin:0 8px;
+}
+
+.genre-highlight::before,
+.game-highlight::before,
+.studio-highlight::before,
+.highlight::before{
+content:"";
+display:inline-block;
+width:10px;
+height:10px;
+background:url("dott.png") no-repeat center/contain;
+margin-right:8px;
+position:relative;
+top:-1px;
+}
+
+.small-note::before{
+content:"";
+position:absolute;
+left:0;
+top:4px;
+width:12px;
+height:12px;
+background:url("arrow.png") no-repeat center/contain;
+}
+
+/* Position */
+
+.hero::after{
+content:"";
+position:absolute;
+top:14px;
+right:14px;
+width:10px;
+height:10px;
+background:#f4a261;
+border-radius:50%;
+opacity:0.9;
+}
+
+.top-box::after{
+content:"";
+position:absolute;
+top:14px;
+right:14px;
+width:10px;
+height:10px;
+border:2px solid #e76f51;
+border-radius:50%;
+box-sizing:border-box;
+}
+
 /* Hover ефекти */
 
 .nav a:hover,
@@ -376,6 +557,7 @@ background:#f8dfbf;
 
 .genre-list li{
 padding:4px 0;
+transition:0.2s;
 }
 
 .genre-list li:hover{
@@ -395,4 +577,31 @@ box-shadow:0 4px 12px rgba(0,0,0,0.08);
 .hero:hover,
 .card:hover{
 box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card:hover{
+transform:translateY(-4px);
+}
+
+/* Очистка float */
+
+.card-wrap::after{
+content:"";
+display:block;
+clear:both;
+}
+/* стрілка для опису гри */
+td p{
+position:relative;
+padding-left:20px;
+}
+
+td p::before{
+content:"";
+position:absolute;
+left:0;
+top:6px;
+width:12px;
+height:12px;
+background:url("arrow.png") no-repeat center/contain;
 }
