@@ -34,6 +34,18 @@ background:#f4a261;
 color:#2b2d42 !important;
 text-decoration:none;
 }
+
+/* Додамо стиль для "секретної" картки, яку створить JS */
+.card.secret {
+    border: 2px solid #e76f51;
+    background: #fffcfb;
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
 </style>
 
 </head>
@@ -43,7 +55,7 @@ text-decoration:none;
 <a id="top"></a>
 
 <h1>Світ комп’ютерних ігор</h1>
-<p class="center"><i>Ігри, жанри, студії та корисні ресурси</i></p>
+<p class="center" id="welcome-text"><i>Ігри, жанри, студії та корисні ресурси</i></p>
 
 <hr class="line">
 
@@ -74,7 +86,7 @@ text-decoration:none;
   </div>
 </div>
 
-<div class="card-wrap">
+<div class="card-wrap" id="main-card-wrap">
 
   <div class="card">
     <h3>Популярні ігри</h3>
@@ -111,7 +123,7 @@ text-decoration:none;
 
 <h2>Приклади популярних ігор</h2>
 
-<table>
+<table id="games-preview-table">
 <tr>
 <th>Гра</th>
 <th>Жанр</th>
@@ -144,8 +156,11 @@ text-decoration:none;
 </table>
 
 <p class="footer">
-<a href="#top">↑ Вгору</a>
+    <a href="#top">↑ Вгору</a> |
+    <a href="#" onclick="goToHome()">На головну</a>
 </p>
+
+<script src="script.js"></script>
 
 </body>
 </html>

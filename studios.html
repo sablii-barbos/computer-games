@@ -21,6 +21,18 @@
       color: #d97706 !important;
       font-weight: bold;
     }
+
+    /* Стиль для динамічного повідомлення */
+    #js-status {
+        text-align: center;
+        padding: 10px;
+        background: #fff4e8;
+        border: 1px solid #f4a261;
+        margin: 10px auto;
+        width: 85%;
+        border-radius: 8px;
+        display: none; /* Спочатку приховано */
+    }
   </style>
 </head>
 <body>
@@ -40,6 +52,8 @@
 </div>
 
 <hr class="line">
+
+<div id="js-status"></div>
 
 <div class="top-box">
   <p class="studio-highlight">
@@ -136,6 +150,7 @@
 
 <iframe
   class="site-frame"
+  id="siteFrameId"
   name="siteFrame"
   src="https://www.rockstargames.com"
   width="85%"
@@ -144,9 +159,11 @@
 </iframe>
 
 <p class="footer">
-  <a href="#top">↑ Вгору</a> |
-  <a href="index.html">На головну</a>
+    <a href="#top">↑ Вгору</a> |
+    <a href="#" onclick="goToHome()">На головну</a>
 </p>
+
+<script src="script.js"></script>
 
 </body>
 </html>
