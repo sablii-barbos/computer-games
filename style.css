@@ -11,6 +11,7 @@ position:static;
 h1,h2{
 color:#2b2d42;
 text-align:center;
+transition: all 0.3s ease;
 }
 
 h1{
@@ -69,6 +70,7 @@ z-index:100;
 background:#f7f7fb;
 padding:10px 0;
 box-shadow:0 2px 8px rgba(0,0,0,0.04);
+transition: transform 0.3s ease;
 }
 
 .center{
@@ -543,6 +545,7 @@ box-sizing:border-box;
 .footer a:hover,
 table a:hover{
 text-decoration:underline;
+transform: scale(1.05);
 }
 
 .card > a:hover{
@@ -663,4 +666,13 @@ body {
     background-color: #fdebd3 !important;
     transform: scale(1.01);
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.card-secret-active {
+    border: 2px solid #e76f51 !important;
+    box-shadow: 0 0 15px rgba(231, 111, 81, 0.4) !important;
+    background: #fff9f8 !important;
+}
+
+.js-selected-row {
+    background-color: #fdebd3 !important;
 }
