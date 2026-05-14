@@ -676,3 +676,56 @@ body {
 .js-selected-row {
     background-color: #fdebd3 !important;
 }
+.lambda-playground{
+width:85%;
+margin:30px auto;
+background:#ffffff;
+padding:20px;
+border-radius:12px;
+box-shadow:0 2px 8px rgba(0,0,0,0.05);
+}
+
+.lambda-zone{
+position:relative;
+height:350px;
+overflow:hidden;
+border:2px dashed #d6d6dc;
+border-radius:12px;
+background:#f9fafc;
+}
+
+.moving-lambda{
+width:120px;
+position:absolute;
+left:30px;
+top:30px;
+cursor:grab;
+transition:transform 0.2s ease, filter 0.2s ease;
+user-select:none;
+}
+
+.moving-lambda:hover{
+transform:scale(1.1) rotate(5deg);
+filter:drop-shadow(0 0 10px rgba(231,111,81,0.5));
+}
+
+.lambda-active{
+transform:scale(1.15);
+filter:drop-shadow(0 0 15px rgba(231,111,81,0.8));
+cursor:grabbing;
+}
+
+.card-hovered{
+background:#fff7ed !important;
+transform:translateY(-5px);
+border:1px solid #f4a261 !important;
+}
+
+.genre-row-hover{
+background:#fdebd3 !important;
+transition:0.2s;
+}
+
+.table-hovered td{
+background:#fff8f0;
+}
